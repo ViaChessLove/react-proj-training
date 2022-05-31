@@ -1,0 +1,92 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
+
+.header__wrapper {
+        margin: 0 auto;
+        margin-top: 33px;
+        max-width: 940px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Griloy-Bold', sans-serif;
+        font-size: 18px;
+        color: #828282;
+}
+
+
+li {
+        list-style-type: none;
+        user-select: none;
+        cursor: pointer;
+}
+
+li:hover{
+        color: black;
+        cursor: pointer;
+        border-bottom: 1px solid black;
+        transition: 1.5s;
+}
+
+li:active{
+        border-bottom: 1px solid black;
+}
+
+.underline {
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        margin: 0 auto;
+        max-width: 940px;
+        margin-top: 32px;
+}
+
+
+.footer {
+        margin: 0 auto;
+        margin-top: 33px;
+        max-width: 940px;
+}
+
+.footer__text {
+        margin: 0 auto;
+        font-size: 18px;
+}
+
+.footer__text a{
+        text-decoration: none;
+        color: #828282;
+}
+
+.footer__text a:hover {
+        color: black;
+        cursor: pointer;
+        border-bottom: 1px solid black;
+        transition: 1.5s;
+}
+
+button {
+        color: #FFF;
+        background-color: black;
+        padding-top: 13px;
+        font-size: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        border-radius: 100px;
+        overflow: hidden;
+}
+
+button:hover {
+        cursor: pointer;
+        opacity: 0.85;
+        background-color: rgb(14, 13, 13);
+        transition: 0.5s;
+}
+
+.socials__wrapper {
+        max-width:343px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+}

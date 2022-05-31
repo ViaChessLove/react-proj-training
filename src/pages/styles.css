@@ -1,0 +1,117 @@
+.home__page {
+        margin: 0 auto;
+        max-width: 940px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #FFF;
+        padding-top: 5px;
+}
+
+.home__title {
+        font-family: 'Griloy-Bold', sans-serif;
+        color: #070707;
+        font-size: 47.34px;
+        max-width: 123.51px;
+        user-select: none; 
+}
+
+.home__info {
+        margin-top: 95px;
+        color: #070707;
+        padding-left: 297px;
+        user-select: none; 
+}
+
+.carousel__wrapper {
+        margin: 0 auto;
+        max-width: 940px;
+        margin-top: 50px;
+}
+
+.carousel .slider-wrapper{
+        width: 80%;
+}
+
+.carousel .thumb{
+        height:50px;
+        display: none;
+}
+
+.carousel{
+        text-align: center;
+}
+
+.about__page {
+        margin: 0 auto;
+        height: 550px;
+        max-width: 940px;
+        text-align: center;
+        background: #F6F6F6;
+        user-select: none; 
+}
+
+.about__title-wrap {
+        padding-top: 90px;
+}
+
+.about__title {
+        font-size: 34px;
+}
+
+.about__text {
+        padding-top: 10px;
+        max-width: 485px;
+        margin: 0 auto;
+}
+
+.about_text-after {
+        padding-top: 107px;
+}
+
+.skills__wrapper {
+        margin: 0 auto;
+        max-width: 940px;
+        background-color: #FFF;
+        text-align: center;
+        padding-top: 91px;
+        user-select: none; 
+}
+
+
+
+.portfolio__container {    
+        background: #F6F6F6;
+        user-select: none; 
+}
+
+.portfolio__page {
+        margin: 0 auto;
+        max-width: 940px;
+}
+
+.portfolio__text {
+        padding-top: 120px;
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 47px;
+        color: #070707;
+}
+
+.portfolio__item {
+        margin-bottom: 45px;
+}
+
+.portfolio__case {
+        text-align: center;
+        text-decoration-line: underline;
+        padding-bottom: 120px;
+}
+
+.contacts_wrapper {
+        margin: 0 auto;
+        max-width: 940px;
+        background-color: #FFF;
+        text-align: center;
+        padding-top: 100px;
+        user-select: none; 
+}

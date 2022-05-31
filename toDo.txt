@@ -1,0 +1,4 @@
+[]language switcher on HomePage
+[]skills with animations on Skills
+[]portfolio with animations in Portfolio 
+[]contacts with animations in contacts
