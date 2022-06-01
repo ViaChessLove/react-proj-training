@@ -115,3 +115,7 @@
         padding-top: 100px;
         user-select: none; 
 }
+
+input {
+        outline: none;
+}

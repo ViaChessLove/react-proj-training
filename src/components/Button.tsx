@@ -3,13 +3,14 @@ import './styles.css';
 
 interface ButtonProps {
         content: string;
+        children?: JSX.Element;
         onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-const Button: React.FC<ButtonProps> = ({content, onClick}) => {
+const Button: React.FC<ButtonProps> = ({content, onClick, children}) => {
         return (
                 <button onClick={onClick}>
-                       {content} 
+                       {content}
                 </button>
         );
 };
