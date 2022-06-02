@@ -15,6 +15,7 @@ const HomePage = () => {
                                                 <div>24 years old, Minsk</div>
                                         </div>
                                 </div>
+
                         </Fader>
                         <Fader delay={450}>
                                 <div className="carousel__wrapper">
