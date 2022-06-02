@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
 const Header = () => {
+        const [headerScrolled, setHeaderScrolled] = useState(false);
+        useEffect(() => {
+                window.addEventListener('scroll', (event) =>{
+                        if (window.scrollY > 180){        
+                                setHeaderScrolled(true);
+                        } else {
+                                setHeaderScrolled(false);
+                        }
+                })
+        }, []);
         return (
-                <>
+                <div className={headerScrolled ? 'fixd' : ''}>
                         
                         <nav className="header__wrapper">
                                         
@@ -38,7 +48,7 @@ const Header = () => {
                         <div className="underline">
 
                         </div>
-                </>
+                </div>
                 
         );
 };

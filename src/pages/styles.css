@@ -34,9 +34,11 @@
 
 .carousel .thumb{
         height:50px;
-        display: none;
 }
 
+.element.style{
+        display: none;
+}
 
 .carousel{
         text-align: center;

@@ -40,6 +40,17 @@ li:active{
         margin-top: 32px;
 }
 
+.fixd {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transform: scale(1);
+        transition: 1.5s all;
+}
+
 
 .footer {
         margin: 0 auto;
@@ -50,6 +61,10 @@ li:active{
 .footer__text {
         margin: 0 auto;
         font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
 }
 
 .footer__text a{

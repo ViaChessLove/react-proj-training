@@ -29,7 +29,7 @@ const HomePage = () => {
                                                         </div>
                                                         <div>
                                                                 <img src="/images/Naverh.svg" alt="" height='300px' width='200px'/>
-                                                        </div>
+                                                        </div> 
                                                 </Carousel>
                                         </div>
                                 </Fader>
