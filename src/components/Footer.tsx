@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const Footer = () => {
-        const [time, setTime] = useState('');
+        const [time, setTime] = useState<string>(Date.now().toString());
         useEffect(() => {
                 const myInterval = setInterval(() => {
                         setTime(new Date().toLocaleTimeString());

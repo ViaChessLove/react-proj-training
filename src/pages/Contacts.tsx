@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from '../components/Button';
 import Fader from '../components/Fader';
 import Socials from '../components/Socials';
@@ -10,11 +10,22 @@ import './styles.css';
 const Contacts = () => {
 
         const [modalActive, setModalActive] = useState<boolean>(false);
+        const [adaptivnost, setAdaptivnost] = useState<boolean>(false);
+        useEffect(() => {
+          window.addEventListener('resize', () =>{
+                  if (window.innerWidth < 940){
+                        setAdaptivnost(true);
+                  } else {
+                          setAdaptivnost(false);
+                  }
+          })
+        }, [])
         return (
                 <div className="contacts_wrapper">
                         <Fader delay={500}>       
                                 <div style={{fontWeight: '600', fontSize: '34px', marginBottom:'20px'}}>
                                         Contacts
+                                        {adaptivnost? 'hui': undefined}
                                 </div>
                         </Fader>
                         <Fader delay={800}>     

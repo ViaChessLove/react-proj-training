@@ -10,9 +10,12 @@ const HomePage = () => {
                         <Fader delay={200}>
                                 <div className='home__page'>
                                         <h3 className="home__title">Denis Novik</h3>
-                                        <div className="home__info">
+                                        <div className="home__info" style={{display: 'flex', flexWrap:'wrap'}}>
                                                 <div>UI | UX designer</div>
                                                 <div>24 years old, Minsk</div>
+                                                <div style={{transform: 'rotate(-90deg)'}}>
+                                                        ru | eng
+                                                </div>
                                         </div>
                                 </div>
 
