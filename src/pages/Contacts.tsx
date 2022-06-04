@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Button from '../components/Button';
 import Fader from '../components/Fader';
 import Socials from '../components/Socials';
@@ -6,6 +6,7 @@ import Modal from '../components/Modal';
 import {useState} from 'react';
 import {ImCross} from 'react-icons/im';
 import './styles.css';
+import { CurrentPage } from '../Context';
 
 const Contacts = () => {
 
@@ -20,6 +21,8 @@ const Contacts = () => {
                   }
           })
         }, [])
+        const {currentPage, setCurrentPage} = useContext(CurrentPage);
+        setCurrentPage('contacts');
         return (
                 <div className="contacts_wrapper">
                         <Fader delay={500}>       

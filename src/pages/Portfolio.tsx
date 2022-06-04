@@ -1,10 +1,13 @@
 
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Animator, batch, Fade, FadeOut, Move, ScrollContainer, ScrollContainerContext, ScrollPage, Sticky, Zoom, ZoomIn, ZoomOut } from 'react-scroll-motion';
+import { CurrentPage } from '../Context';
 import Fader from './../components/Fader';
 
 
 const Portfolio = () => {
+        const {currentPage, setCurrentPage} = useContext(CurrentPage);
+        setCurrentPage('portfolio');
         return (
                 <div className="portfolio__container">
                         <div className="portfolio__page">

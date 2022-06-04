@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { CurrentPage } from '../Context';
 import Fader from './../components/Fader';
 
 const About = () => {
+        const {currentPage, setCurrentPage} = useContext(CurrentPage);
+        setCurrentPage('about');
         return (
                 <div className="portfolio__container">
                         <div className="about__page">

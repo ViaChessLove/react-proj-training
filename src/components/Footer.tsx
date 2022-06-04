@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Outlet } from 'react-router-dom';
 
 const Footer = () => {
         const [time, setTime] = useState<string>(Date.now().toString());
@@ -9,6 +10,7 @@ const Footer = () => {
         }, [])
         return (
                 <div className="footer">
+                        <Outlet/>
                         <div className="footer__text">
                                 <div>
                                         The web page was made by Nemtsev Vyacheslav - 

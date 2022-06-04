@@ -1,10 +1,15 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useContext, useEffect, useLayoutEffect } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 import './styles.css';
-import Fader from './../components/Fader';
+import Fader from './../components/Fader'
+import { CurrentPage } from '../Context';
+
+
 const HomePage = () => {
+        const {currentPage, setCurrentPage} = useContext(CurrentPage);
+        setCurrentPage('home');
         return (
                 <>
                         <Fader delay={200}>
@@ -13,16 +18,14 @@ const HomePage = () => {
                                         <div className="home__info" style={{display: 'flex', flexWrap:'wrap'}}>
                                                 <div>UI | UX designer</div>
                                                 <div>24 years old, Minsk</div>
-                                                <div style={{transform: 'rotate(-90deg)'}}>
-                                                        ru | eng
-                                                </div>
                                         </div>
                                 </div>
 
                         </Fader>
-                        <Suspense fallback={<div>Loading...</div>}>
+                        <Suspense fallback={<div></div>}>
                                 <Fader delay={450}>
                                         <div className="carousel__wrapper">
+                                                
                                                 <Carousel className="main-slide" autoPlay={true} interval={2000} infiniteLoop={true}>
                                                         <div>
                                                                 <img src="/images/Asian.svg" alt="" height='300px' width='200px' />

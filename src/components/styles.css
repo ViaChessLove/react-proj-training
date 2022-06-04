@@ -23,12 +23,12 @@ li {
 li:hover{
         color: black;
         cursor: pointer;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
         transition: 1.5s;
 }
 
 li:active{
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
 }
 
 .underline {

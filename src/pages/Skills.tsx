@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './styles.css';
 import SkillCard from './SkillsCards/SkillCard';
 import SkillList from './SkillsCards/SkillList';
 import Fader from '../components/Fader';
+import { CurrentPage } from '../Context';
 
 const Skills = () => {
-
+        const {currentPage, setCurrentPage} = useContext(CurrentPage);
+        setCurrentPage('skills');
         return (
                 <div className="skills__wrapper">
                         <Fader delay={500}>
